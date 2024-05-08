@@ -1,0 +1,47 @@
+﻿<h2 class="text-center mb-4">Results</h2>
+<a class="btn btn-primary btn-lg mb-4" href="/Users/Create">New User</a>
+
+<table class="mx-auto table table-dark text-center">
+    <thead>
+        <tr><th colspan="4">Coding Factory Users</th></tr>
+        <tr>
+            <th>Κωδικός</th>
+            <th>Όνομα</th>
+            <th>Επώνυμο</th>
+            <th>Edit/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.UsersDTO!.Count != 0)
+        {
+            @foreach (var user in Model.UsersDTO)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Firstname</td>
+                    <td>@user.Lastname</td>
+                    <td>
+                        <a class="btn btn-primary" href="/Students/@user.Id/Update">Edit</a>
+                        <a class="btn btn-primary" href="javascript:void(0)" onclick="confirmDelete(@user.Id)">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div>
+    <div>
+        @if (Model.ErrorArray!.Count != 0)
+        {
+            @foreach (var error in Model.ErrorArray)
+            {
+                <div>
+                    <p>@error.Message</p>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<script src="~/js/user.js"></script>

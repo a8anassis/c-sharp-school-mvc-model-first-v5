@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .sidebar {
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* Text color */
+        }
+
+        .submenu {
+            display: none; /* Hide submenu by default */
+            margin-left: 20px; /* Indent submenu items */
+        }
+
+        .submenu-active {
+            display: block; /* Show submenu when active */
+        }
+
+        .submenu-toggle::before {
+            content: "\00BB"; /* Right chevron symbol */
+            display: inline-block;
+            margin-right: 10px; /* Spacing between symbol and text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left sidebar -->
+            <div class="col-sm-2 p-0">
+                <nav class="nav flex-column sidebar" style="height: calc(100vh - 150px)">
+                    <a class="nav-link text-white" href="#" 
+                            onclick="toggleSubMenu(event)"><span class="submenu-toggle"></span>Profile</a>
+                    <div class="submenu" id="profileSubMenu">
+                        <a class="nav-link text-white" href="#">Edit Profile</a>
+                        <a class="nav-link text-white" href="#">View Profile</a>
+                    </div>
+                    <a class="nav-link text-white" href="#">My Courses</a>
+                </nav>
+            </div>
+            <!-- Main content area -->
+            <div class="col-md-10">
+                <!-- Content  -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubMenu(event) {
+            event.preventDefault(); // Prevent default link behavior
+            let submenu = document.querySelector('#profileSubMenu');
+            submenu.classList.toggle('submenu-active');
+        }
+    </script>
+
+</body>
+</html>
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <p>Hello from Teacher Index Dashboard</p>
+
+</body>
+</html>*@

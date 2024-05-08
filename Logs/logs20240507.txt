@@ -1,0 +1,19 @@
+[07-05-2024 17:24:23595 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:24:23748 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7250"
+[07-05-2024 17:24:23750 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5250"
+[07-05-2024 17:24:23755 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:24:23757 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:24:23759 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\"
+[07-05-2024 17:24:24355 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/ - -
+[07-05-2024 17:24:24432 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[07-05-2024 17:24:24468 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[07-05-2024 17:24:24702 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Login".
+[07-05-2024 17:24:24830 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Login" executed in 130.9892ms.
+[07-05-2024 17:24:24834 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)" in 364.6684ms
+[07-05-2024 17:24:24837 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[07-05-2024 17:24:24869 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/ - - - 200 - text/html;+charset=utf-8 518.3805ms
+[07-05-2024 17:24:24889 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:24:24889 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[07-05-2024 17:24:24894 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.2509ms
+[07-05-2024 17:24:24936 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.8247ms
+[07-05-2024 17:24:36733 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
