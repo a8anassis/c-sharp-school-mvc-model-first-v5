@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
-using System.Reflection;
 using UsersStudentsMVCApp.Data;
 using UsersStudentsMVCApp.DTO;
+using UsersStudentsMVCApp.Models;
 using UsersStudentsMVCApp.Repositories;
 using UsersStudentsMVCApp.Security;
 using UsersStudentsMVCApp.Services.Exceptions;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace UsersStudentsMVCApp.Services
 {
@@ -42,27 +41,38 @@ namespace UsersStudentsMVCApp.Services
                 user.Password = EncryptionUtil.Encrypt(user.Password!);
                 await _unitOfWork!.UserRepository.AddAsync(user);
 
-                if (user!.UserRole!.Value.ToString().Equals("Student"))
+                if (user.UserRole == UserRole.Student)
                 {
                     student = ExtractStudent(signupDTO);
                     if (await _unitOfWork!.StudentRepository.GetByPhoneNumber(student.PhoneNumber) is not null)
                     {
-                        throw new StudentAlreadyExistsException("StudentExists");
+                        throw new StudentAlreadyExistsException("StudentPhoneNumberExists");
                     }
                     await _unitOfWork!.StudentRepository.AddAsync(student);
                     user.Student = student;
                     // student.User = user; Since entities are attached EF manages the other end of the relationship
                 }
-                else if (user!.UserRole!.Value.ToString().Equals("Teacher"))
+                else if (user.UserRole == UserRole.Teacher)
                 {
                     teacher = ExtractTeacher(signupDTO);
                     if (await _unitOfWork!.TeacherRepository.GetByPhoneNumber(teacher.PhoneNumber) is not null)
                     {
-                        throw new TeacherAlreadyExistsException("StudentExists");
+                        throw new TeacherAlreadyExistsException("TeacherPhoneNumberExists");
                     }
                     await _unitOfWork!.TeacherRepository.AddAsync(teacher);
                     user.Teacher = teacher;
                     // teacher.User = user;   // EF manages the other end since both entities are attached 
+                }
+                else if (user.UserRole == UserRole.Admin)
+                {
+                    //admin = ExtractAdmin(signupDTO);
+                    // if (await _unitOfWork!.AdminRepository.GetByPhoneNumber(admin.PhoneNumber) is not null)
+                    // {
+                    //    throw new AdminAlreadyExistsException("AdminPhoneNumberExists");
+                    // }
+                    // await _unitOfWork!.AdminRepository.AddAsync(admin);
+                    // user.Admin = admin;
+                    // admin.User = user;   // EF manages the other end since both entities are attached 
                 }
                 else
                 {
@@ -74,6 +84,7 @@ namespace UsersStudentsMVCApp.Services
             } catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }           
         }
 
@@ -89,6 +100,7 @@ namespace UsersStudentsMVCApp.Services
             catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }           
             return user;
         }
@@ -111,6 +123,7 @@ namespace UsersStudentsMVCApp.Services
             catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }
             return user;
         }
@@ -136,6 +149,7 @@ namespace UsersStudentsMVCApp.Services
             } catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }
             return user;
         }
@@ -150,6 +164,7 @@ namespace UsersStudentsMVCApp.Services
             } catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;  
             }
             return user;
         }
@@ -159,22 +174,28 @@ namespace UsersStudentsMVCApp.Services
             List<User> users = new();
             List<Func<User, bool>> predicates = new();
 
-            // Add individual predicates for filtering conditions
-            if (!string.IsNullOrEmpty(userFiltersDTO.Username))
+            try
             {
-                predicates.Add(u => u.Username == userFiltersDTO.Username);
+                if (!string.IsNullOrEmpty(userFiltersDTO.Username))
+                {
+                    predicates.Add(u => u.Username == userFiltersDTO.Username);
+                }
+                if (!string.IsNullOrEmpty(userFiltersDTO.Email))
+                {
+                    predicates.Add(u => u.Email == userFiltersDTO.Email);
+                }
+                if (!string.IsNullOrEmpty(userFiltersDTO.UserRole))
+                {
+                    predicates.Add(u => u.UserRole!.Value.ToString() == userFiltersDTO.UserRole);
+                }
+                users = await _unitOfWork!.UserRepository.GetAllUsersFilteredAsync(pageNumber, pageSize,
+                    predicates);
             }
-            if (!string.IsNullOrEmpty(userFiltersDTO.Email))
+            catch (Exception e)
             {
-                predicates.Add(u => u.Email == userFiltersDTO.Email);
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }
-            if (!string.IsNullOrEmpty(userFiltersDTO.UserRole))
-            {
-                predicates.Add(u => u.UserRole!.Value.ToString() == userFiltersDTO.UserRole);
-            }
-
-            users = await _unitOfWork!.UserRepository.GetAllUsersFilteredAsync(pageNumber, pageSize, 
-                predicates);
             return users;
         }
 

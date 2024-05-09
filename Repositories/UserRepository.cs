@@ -1,7 +1,5 @@
-﻿using Azure.Core;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using UsersStudentsMVCApp.Data;
-using UsersStudentsMVCApp.DTO;
 using UsersStudentsMVCApp.Security;
 
 namespace UsersStudentsMVCApp.Repositories
@@ -12,23 +10,6 @@ namespace UsersStudentsMVCApp.Repositories
             : base(context)
         {
         }
-
-        /// <summary>
-        /// Inserts a user into the Database, having first encrypted 
-        /// their passeord.
-        /// </summary>
-        /// <param name="user">The user entity</param>
-        /// <returns>Inserted user's id or null if user already exists</returns>
-        //public async Task<int?> SignUpUserAsync(User user)
-        //public async Task SignUpUserAsync(User user)
-        //{
-            /*var existingUser = await _context.Users.Where(x => x.Username == user.Username || 
-                    x.Email == user.Email).FirstOrDefaultAsync();
-            if (existingUser is not null) return;*/
-
-            //user.Password = EncryptionUtil.Encrypt(user.Password!);
-            //await _context.Users.AddAsync(user);
-        //}
 
         /// <summary>
         /// Get the user based on username and password.

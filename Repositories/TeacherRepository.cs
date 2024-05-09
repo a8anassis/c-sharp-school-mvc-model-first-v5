@@ -53,7 +53,7 @@ namespace UsersStudentsMVCApp.Repositories
         public async Task<User?> GetTeacherByUsernameAync(string username)
         {
             var userTeacher = await _context.Users
-            .Where(u => u.Username == username && u.UserRole == UserRole.Teacher) // Assuming "User" is the navigation property from Student to User, and "Username" is the property to filter by
+            .Where(u => u.Username == username && u.UserRole == UserRole.Teacher) 
             .SingleOrDefaultAsync();
 
             return userTeacher;

@@ -10,7 +10,7 @@ namespace UsersStudentsMVCApp.Services
         Task<User?> UpdateUserAsync(int userId, UserDTO userDTO);
         Task<User?> UpdateUserPatchAsync(int userId, UserPatchDTO request);
         Task<User?> GetUserByUsernameAsync(string username);
-
-        Task<List<User>> GetAllUsersFiltered(int pageNumber, int pageSize, UserFiltersDTO userFiltersDTO);
+        Task<List<User>> GetAllUsersFiltered(int pageNumber, int pageSize, 
+            UserFiltersDTO userFiltersDTO);
     }
 }

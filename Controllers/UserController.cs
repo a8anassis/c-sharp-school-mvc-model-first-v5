@@ -5,6 +5,7 @@ using System.Security.Claims;
 using UsersStudentsMVCApp.DTO;
 using UsersStudentsMVCApp.Models;
 using UsersStudentsMVCApp.Services;
+using UsersStudentsMVCApp.Data;
 
 namespace UsersStudentsMVCApp.Controllers
 {
@@ -61,7 +62,22 @@ namespace UsersStudentsMVCApp.Controllers
             ClaimsPrincipal principal = HttpContext.User;
             if (principal.Identity!.IsAuthenticated)
             {
-                return RedirectToAction("Index", "Home");
+                if (principal.FindFirst(ClaimTypes.Role)!.Value == "Teacher")
+                {
+                    return RedirectToAction("Index", "Teacher");               
+                }
+                else if (principal.FindFirst(ClaimTypes.Role)!.Value == "Student")
+                {
+                    return RedirectToAction("Index", "Student");
+                }
+                else if (principal.FindFirst(ClaimTypes.Role)!.Value == "Admin")
+                {
+                    return RedirectToAction("Index", "Admin");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
             return View();
         }

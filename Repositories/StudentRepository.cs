@@ -30,8 +30,8 @@ namespace UsersStudentsMVCApp.Repositories
         public async Task<List<User>> GetAllUsersStudentsAsync()
         {
             var usersWithStudentRole = await _context.Users
-                   .Where(u => u.UserRole == UserRole.Student) // Assuming UserRole is the enum for roles
-                   .Include(u => u.Student) // Assuming Student is the navigation property representing the related Student entity
+                   .Where(u => u.UserRole == UserRole.Student) 
+                   .Include(u => u.Student) 
                    .ToListAsync();
 
             return usersWithStudentRole;

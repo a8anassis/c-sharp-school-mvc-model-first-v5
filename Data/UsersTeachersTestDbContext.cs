@@ -1,6 +1,6 @@
-﻿using Azure;
+﻿
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
+
 
 namespace UsersStudentsMVCApp.Data
 {
@@ -85,12 +85,12 @@ namespace UsersStudentsMVCApp.Data
                 entity.Property(e => e.Firstname)
                     .HasMaxLength(50).HasColumnName("FIRSTNAME");               
                 entity.Property(e => e.Lastname)
-                    .HasMaxLength(50).HasColumnName("LASTNAME");                
+                    .HasMaxLength(50).HasColumnName("LASTNAME");
                 entity.Property(e => e.UserRole)
                     .HasColumnName("USER_ROLE")
                     .HasConversion<string>()
-                    .HasMaxLength(50)
-                    .IsRequired();              
+                    .HasMaxLength(50);
+                   // .IsRequired();              
             });
         }
     }

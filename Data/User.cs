@@ -15,9 +15,9 @@ namespace UsersStudentsMVCApp.Data
         public virtual Student? Student { get; set; }
         public virtual Teacher? Teacher { get; set; }
 
-        public override string? ToString()
+        /*public override string? ToString()
         {
             return $"{Username}, {Firstname}, {Lastname}";
-        }
+        }*/
     }
 }

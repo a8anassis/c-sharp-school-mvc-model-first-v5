@@ -96,3 +96,142 @@ WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
 [08-05-2024 13:53:30673 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
 [08-05-2024 13:53:30676 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 2.8598ms
 [08-05-2024 13:53:30684 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3224ms
+[08-05-2024 17:53:56237 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[08-05-2024 20:57:55990 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[08-05-2024 20:57:56343 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7250"
+[08-05-2024 20:57:56348 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5250"
+[08-05-2024 20:57:56359 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[08-05-2024 20:57:56363 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[08-05-2024 20:57:56367 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\"
+[08-05-2024 20:57:57631 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/ - -
+[08-05-2024 20:57:57984 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 20:57:58142 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:57:59082 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Login".
+[08-05-2024 20:57:59570 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Login" executed in 500.6345ms.
+[08-05-2024 20:57:59587 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)" in 1433.9415ms
+[08-05-2024 20:57:59594 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 20:57:59761 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/ - - - 200 - text/html;+charset=utf-8 2145.8884ms
+[08-05-2024 20:57:59782 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 20:57:59783 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 20:57:59806 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 23.4298ms
+[08-05-2024 20:57:59996 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 213.3952ms
+[08-05-2024 20:58:02354 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/User/Signup - -
+[08-05-2024 20:58:02439 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Signup (UsersStudentsMVCApp)"'
+[08-05-2024 20:58:02478 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Signup\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Signup()" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:58:02618 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Signup".
+[08-05-2024 20:58:02745 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Signup" executed in 129.938ms.
+[08-05-2024 20:58:02753 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Signup (UsersStudentsMVCApp)" in 191.4251ms
+[08-05-2024 20:58:02761 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Signup (UsersStudentsMVCApp)"'
+[08-05-2024 20:58:02776 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/User/Signup - - - 200 - text/html;+charset=utf-8 422.2714ms
+[08-05-2024 20:58:02858 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 20:58:02858 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 20:58:02875 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 16.6429ms
+[08-05-2024 20:58:02915 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.5362ms
+[08-05-2024 20:58:44901 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7250/User/Signup application/x-www-form-urlencoded 324
+[08-05-2024 20:58:44941 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)"'
+[08-05-2024 20:58:45055 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignUp\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(UsersStudentsMVCApp.DTO.UserSignupDTO)" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:58:45194 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "SignUp".
+[08-05-2024 20:58:45216 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "SignUp" executed in 25.2876ms.
+[08-05-2024 20:58:45224 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)" in 156.3106ms
+[08-05-2024 20:58:45233 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)"'
+[08-05-2024 20:58:45249 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7250/User/Signup application/x-www-form-urlencoded 324 - 200 - text/html;+charset=utf-8 347.3273ms
+[08-05-2024 20:58:45309 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 20:58:45309 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 20:58:45322 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 13.4161ms
+[08-05-2024 20:58:45359 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.7520ms
+[08-05-2024 20:59:20855 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7250/User/Signup application/x-www-form-urlencoded 329
+[08-05-2024 20:59:20867 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)"'
+[08-05-2024 20:59:20874 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignUp\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(UsersStudentsMVCApp.DTO.UserSignupDTO)" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:59:31752 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("547"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+[08-05-2024 20:59:35625 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("91"ms) [Parameters=["@__phoneNumber_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[ID], [t].[INSTITUTION], [t].[PHONE_NUMBER], [t].[UserId]
+FROM [TEACHERS] AS [t]
+WHERE [t].[PHONE_NUMBER] = @__phoneNumber_0"
+[08-05-2024 20:59:35971 +03:00 UsersStudentsMVCApp.Services.UserService ] "StudentExists""   at UsersStudentsMVCApp.Services.UserService.SignUpUserAsync(UserSignupDTO signupDTO) in C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\Services\UserService.cs:line 59"
+[08-05-2024 20:59:36001 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "SignUp".
+[08-05-2024 20:59:36030 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "SignUp" executed in 30.5871ms.
+[08-05-2024 20:59:36038 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)" in 15139.0684ms
+[08-05-2024 20:59:36057 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.SignUp (UsersStudentsMVCApp)"'
+[08-05-2024 20:59:36119 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7250/User/Signup application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 15263.1225ms
+[08-05-2024 20:59:36194 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 20:59:36196 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 20:59:36386 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 191.7528ms
+[08-05-2024 20:59:36492 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 295.8350ms
+[08-05-2024 20:59:45816 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/ - -
+[08-05-2024 20:59:45822 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 20:59:45829 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:59:45842 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Login".
+[08-05-2024 20:59:45852 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Login" executed in 10.0625ms.
+[08-05-2024 20:59:45859 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)" in 17.6749ms
+[08-05-2024 20:59:45863 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 20:59:45873 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/ - - - 200 - text/html;+charset=utf-8 57.1429ms
+[08-05-2024 20:59:45910 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 20:59:45910 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 20:59:45915 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 5.2110ms
+[08-05-2024 20:59:45942 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.0308ms
+[08-05-2024 20:59:59547 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7250/ application/x-www-form-urlencoded 222
+[08-05-2024 20:59:59566 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 20:59:59591 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(UsersStudentsMVCApp.DTO.UserLoginDTO)" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 20:59:59886 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[08-05-2024 21:00:00749 +03:00 UsersStudentsMVCApp.Services.UserService ] "User: UsersStudentsMVCApp.Data.User found and returned"
+[08-05-2024 21:00:00764 +03:00 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler ] AuthenticationScheme: "Cookies" signed in.
+[08-05-2024 21:00:00770 +03:00 Microsoft.AspNetCore.Mvc.RedirectToActionResult ] Executing RedirectResult, redirecting to "/Teacher/Index".
+[08-05-2024 21:00:00774 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)" in 1172.671ms
+[08-05-2024 21:00:00780 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:00785 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7250/ application/x-www-form-urlencoded 222 - 302 0 - 1238.3441ms
+[08-05-2024 21:00:00794 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/Teacher/Index - -
+[08-05-2024 21:00:00814 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.TeacherController.Index (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:00823 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Index\", controller = \"Teacher\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "UsersStudentsMVCApp.Controllers.TeacherController" ("UsersStudentsMVCApp").
+[08-05-2024 21:00:00835 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Index".
+[08-05-2024 21:00:00967 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Index" executed in 133.0722ms.
+[08-05-2024 21:00:00972 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.TeacherController.Index (UsersStudentsMVCApp)" in 138.9489ms
+[08-05-2024 21:00:00976 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.TeacherController.Index (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:00990 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/Teacher/Index - - - 200 - text/html;+charset=utf-8 196.1641ms
+[08-05-2024 21:00:01038 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/lib/bootstrap/dist/css/bootstrap.min.css - -
+[08-05-2024 21:00:01044 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[08-05-2024 21:00:01045 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 21:00:01046 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[08-05-2024 21:00:01046 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/UsersStudentsMVCApp.styles.css?v=--OtD_X7kTLj6T46_XbY1Cfz-c3kn2d4ITWGTdsakwE - -
+[08-05-2024 21:00:01047 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[08-05-2024 21:00:01048 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/lib/jquery/dist/jquery.min.js - -
+[08-05-2024 21:00:01049 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 21:00:01057 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 12.4875ms
+[08-05-2024 21:00:01084 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\wwwroot\css\site.css"'
+[08-05-2024 21:00:01084 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/UsersStudentsMVCApp.styles.css"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\obj\Debug\net6.0\scopedcss\bundle\UsersStudentsMVCApp.styles.css"'
+[08-05-2024 21:00:01100 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\wwwroot\js\site.js"'
+[08-05-2024 21:00:01103 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+[08-05-2024 21:00:01104 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+[08-05-2024 21:00:01118 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"C:\Users\a8ana\source\repos2022com\WebMVCUsersStudentsTest\UsersStudentsMVCApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+[08-05-2024 21:00:01138 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 94.3771ms
+[08-05-2024 21:00:01156 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/UsersStudentsMVCApp.styles.css?v=--OtD_X7kTLj6T46_XbY1Cfz-c3kn2d4ITWGTdsakwE - - - 200 1136 text/css 109.0536ms
+[08-05-2024 21:00:01160 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.2017ms
+[08-05-2024 21:00:01163 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 116.4757ms
+[08-05-2024 21:00:01172 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 134.0719ms
+[08-05-2024 21:00:01192 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 145.6703ms
+[08-05-2024 21:00:01200 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 151.9232ms
+[08-05-2024 21:00:15312 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/Home/LogOut - -
+[08-05-2024 21:00:15318 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.HomeController.LogOut (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:15332 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LogOut\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogOut()" on controller "UsersStudentsMVCApp.Controllers.HomeController" ("UsersStudentsMVCApp").
+[08-05-2024 21:00:15347 +03:00 Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler ] AuthenticationScheme: "Cookies" signed out.
+[08-05-2024 21:00:15352 +03:00 Microsoft.AspNetCore.Mvc.RedirectToActionResult ] Executing RedirectResult, redirecting to "/".
+[08-05-2024 21:00:15356 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.HomeController.LogOut (UsersStudentsMVCApp)" in 13.4001ms
+[08-05-2024 21:00:15360 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.HomeController.LogOut (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:15365 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/Home/LogOut - - - 302 0 - 53.0337ms
+[08-05-2024 21:00:15371 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/ - -
+[08-05-2024 21:00:15375 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:15379 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "UsersStudentsMVCApp.Controllers.UserController" ("UsersStudentsMVCApp").
+[08-05-2024 21:00:15385 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executing ViewResult, running view "Login".
+[08-05-2024 21:00:15393 +03:00 Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor ] Executed ViewResult - view "Login" executed in 8.0799ms.
+[08-05-2024 21:00:15398 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)" in 13.4331ms
+[08-05-2024 21:00:15402 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsMVCApp.Controllers.UserController.Login (UsersStudentsMVCApp)"'
+[08-05-2024 21:00:15406 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/ - - - 200 - text/html;+charset=utf-8 34.8181ms
+[08-05-2024 21:00:15443 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_vs/browserLink - -
+[08-05-2024 21:00:15445 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - -
+[08-05-2024 21:00:15450 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.7572ms
+[08-05-2024 21:00:15461 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7250/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.7576ms

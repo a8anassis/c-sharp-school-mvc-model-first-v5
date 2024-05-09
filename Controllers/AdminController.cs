@@ -25,7 +25,7 @@ namespace UsersStudentsMVCApp.Controllers
             _applicationService = applicationService;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index(UserFiltersDTO userFiltersDTO)
         {
